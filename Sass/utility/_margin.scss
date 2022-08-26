@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.u-mr36 {
+  @include tab {
+    margin-right: 36px;
+  }
+}
+
+.u-mr36 {
+  @include tab {
+    margin-right: 18px;
+  }
+}
+
+.u-mr10 {
+  @include tab {
+    margin-right: 10px;
+  }
+}

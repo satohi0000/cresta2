@@ -1,0 +1,31 @@
+@use "../global" as *;
+
+.l-header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #1b1310;
+  color: #fff;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  border-bottom: 2px solid #fff;
+  li {
+    padding: 7px 0 0 55px;
+    @include tab {
+      margin: 40px 0 0 50px;
+    }
+    &:first-of-type {
+      padding: 8px 10px 0 0px;
+      @include tab {
+        padding: 11px 0 0 55px;
+        margin: 151px 0 0 52px;
+      }
+    }
+    > a {
+      @include f_style(14, bold, 21, 0);
+    }
+  }
+}

@@ -1,0 +1,160 @@
+@use "../global" as *;
+
+.p-article {
+  max-width: $inner2;
+  margin: 0 auto;
+  @include tab {
+    margin-left: 14px;
+  }
+  &:nth-of-type(1) {
+    margin-top: 113px;
+  }
+  &:nth-of-type(2) {
+    margin-top: 175px;
+    @include tab {
+      margin-top: 164px;
+    }
+  }
+  &:nth-of-type(3) {
+    margin-top: 156px;
+    @include tab {
+      margin-top: 133px;
+    }
+  }
+  &:nth-of-type(4) {
+    margin-top: 158px;
+    @include tab {
+      margin-top: 161px;
+      margin-right: 10px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin-top: 76px;
+    @include tab {
+      font-size: 20px;
+    }
+  }
+  p {
+    margin-top: 26px;
+    @include tab {
+      margin-top: 20px;
+      letter-spacing: 0.06em;
+      padding-right: 11px;
+    }
+  }
+  &__2colum {
+    &1 {
+      display: flex;
+      width: 100%;
+      @include tab {
+        flex-direction: column-reverse;
+      }
+
+      &-left {
+        width: 94%;
+        margin-top: 82px;
+
+        @include tab {
+          margin-top: 36px;
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          @include tab {
+            width: 96%;
+          }
+          object-fit: cover;
+        }
+      }
+      &-right {
+        margin-top: 17px;
+        margin-left: 70px;
+        @include tab {
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+      }
+    }
+    &2 {
+      display: flex;
+      width: 100%;
+      @include tab {
+        flex-direction: column;
+      }
+      &-left {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 70px;
+        @include tab {
+          margin-right: 0px;
+        }
+        h3 {
+          margin-top: 54px;
+          @include tab {
+            margin-top: 13px;
+          }
+        }
+      }
+      &-right {
+        margin-top: 47px;
+        width: 100%;
+        @include tab {
+          margin-top: 5px;
+        }
+        img {
+          width: 100%;
+          @include tab {
+            width: 96%;
+          }
+        }
+      }
+    }
+  }
+  &__3card {
+    display: flex;
+    @include tab {
+      flex-direction: column;
+    }
+    &-1 {
+      margin-top: 75px;
+      margin-left: 33px;
+      width: 33%;
+      @include tab {
+        width: 89%;
+        margin-top: 79px;
+      }
+      border: 1px solid #707070;
+      &:nth-of-type(1) {
+        margin-left: 0px;
+        @include tab {
+          margin-left: 12px;
+          margin-top: 79px;
+        }
+      }
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        @include tab {
+          margin-left: 12px;
+          margin-top: 50px;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      p {
+        padding: 17px 31px 25px 34px;
+        @include tab {
+          padding-top: 14px;
+        }
+        margin-top: 0;
+        @include f_style(13, medium, 25, 50);
+      }
+    }
+  }
+}

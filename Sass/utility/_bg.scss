@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.bg-fixed {
+  height: 300px;
+  @include tab {
+    height: 95px;
+  }
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}

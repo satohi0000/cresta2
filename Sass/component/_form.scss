@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+#c-form {
+  width: 100%;
+  height: 25px;
+  &-content {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+.c-form {
+  &__input {
+    margin: 0px auto;
+    margin-top: 73px;
+    max-width: 700px;
+    padding-right: 11px;
+  }
+  &__name {
+    margin-top: 3px;
+  }
+  &__phone {
+    margin-top: 26px;
+    @include tab {
+      margin-top: 22px;
+    }
+  }
+  &__email {
+    margin-top: 23px;
+    @include tab {
+      margin-top: 22px;
+    }
+  }
+  &__content {
+    margin-top: 15px;
+    @include tab {
+      margin-top: 19px;
+    }
+  }
+  &__button {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 235px;
+    height: 60px;
+    border-radius: 30px;
+    color: $white;
+    background-color: $black;
+    font-size: 20px;
+  }
+}

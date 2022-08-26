@@ -1,0 +1,37 @@
+@use "../global" as *;
+
+body {
+  background-color: $background;
+  list-style: none;
+  a {
+    color: $white;
+    @include f_style(26, medium, 34, 0);
+  }
+  li {
+    color: $white;
+    @include f_style(12, bold, 21, 0);
+  }
+  h1 {
+    @include f_style(46, medium, 24, 0);
+    color: $white;
+    font-weight: $font-family1;
+  }
+  h2 {
+    @include f_style(30, medium, 24, 50);
+    color: $black;
+    font-weight: $font-family2;
+  }
+  h3 {
+    @include f_style(24, bold, 48, 100);
+    color: $black;
+    font-family: $font-family1;
+  }
+  p,
+  h4,
+  dt,
+  dd {
+    @include f_style(14, bold, 30, 50);
+    color: $black;
+    font-weight: $font-family2;
+  }
+}

@@ -1,0 +1,15 @@
+@mixin f_style($pixels, $weight: false, $height: false, $spacing: false) {
+  font-size: $pixels * 1px;
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $height {
+    line-height: calc($height / $pixels);
+  }
+
+  @if $spacing {
+    letter-spacing: calc($spacing / 1000) * 1em;
+  }
+}
