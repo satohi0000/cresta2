@@ -4,10 +4,6 @@ body {
 }
 body a {
   color: #fff;
-  font-size: 26px;
-  font-weight: medium;
-  line-height: 1.3076923077;
-  letter-spacing: 0em;
 }
 body li {
   color: #fff;
@@ -17,31 +13,37 @@ body li {
   letter-spacing: 0em;
 }
 body h1 {
-  font-size: 46px;
-  font-weight: medium;
-  line-height: 0.5217391304;
-  letter-spacing: 0em;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 0.7142857143;
+  letter-spacing: 0.05em;
   color: #fff;
-  font-weight: "Noto Sans JP", sans-serif;
+  font-weight: "Noto Serif", serif;
 }
 body h2 {
-  font-size: 30px;
-  font-weight: medium;
-  line-height: 0.8;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.25;
   letter-spacing: 0.05em;
-  color: #333333;
-  font-weight: "Roboto", sans-serif;
+  font-weight: "Noto Serif JP", serif;
 }
 body h3 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  color: #333333;
-  font-family: "Noto Sans JP", sans-serif;
+  font-size: 25px;
+  font-weight: Bold;
+  line-height: 1.44;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  font-family: "Noto Serif", serif;
+}
+body h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: Bold;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  font-family: "Noto Serif JP", serif;
 }
 body p,
-body h4,
 body dt,
 body dd {
   font-size: 14px;
@@ -49,7 +51,7 @@ body dd {
   line-height: 2.1428571429;
   letter-spacing: 0.05em;
   color: #333333;
-  font-weight: "Roboto", sans-serif;
+  font-weight: "Noto Serif JP", serif;
 }
 
 html,
@@ -270,6 +272,9 @@ select {
     font-size: 26px;
     padding: 40px 61px 40px 41px;
   }
+}
+.l-contents-img h4 {
+  position: absolute;
 }
 
 .l-footer {
@@ -712,7 +717,7 @@ select {
 }
 .c-pagenation li {
   padding: 0 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Serif JP", serif;
   font-size: 14px;
   font-weight: regular;
   line-height: 1.5;
