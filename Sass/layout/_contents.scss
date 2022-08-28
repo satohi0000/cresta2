@@ -25,21 +25,11 @@
       height: 100%;
       object-fit: cover;
     }
-    h1 {
+    &__center {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -51%);
-      border: 1px solid #fff;
-      padding: 58px 53px 50px 41px;
-      white-space: nowrap;
-      @include tab {
-        font-size: 26px;
-        padding: 40px 61px 40px 41px;
-      }
-    }
-    h4 {
-      position: absolute;
+      transform: translate(-50%, -50%);
     }
   }
 }

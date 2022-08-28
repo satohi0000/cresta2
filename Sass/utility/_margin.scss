@@ -1,8 +1,12 @@
 @use "../global" as *;
 
-.u-mr36 {
-  @include tab {
-    margin-right: 36px;
+.u-mg {
+  &-1 {
+    margin-left: 45px;
+  }
+  &-2 {
+    margin-top: 448px !important;
+    margin-left: 20px;
   }
 }
 

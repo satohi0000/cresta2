@@ -1,31 +1,36 @@
 @use "../global" as *;
 
 .l-header {
-  position: sticky;
-  top: 0;
   z-index: 99;
   background-color: #1b1310;
   color: #fff;
-  height: 72px;
+  height: 752px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8%;
+  position: relative;
   border-bottom: 2px solid #fff;
-  li {
-    padding: 7px 0 0 55px;
-    @include tab {
-      margin: 40px 0 0 50px;
+  &-img__center {
+    position: absolute;
+    padding-top: 2px;
+    top: 57%;
+    left: 9%;
+    h4 {
+      padding-top: 45px;
+      padding-left: 31px;
+      font-style: normal;
     }
-    &:first-of-type {
-      padding: 8px 10px 0 0px;
-      @include tab {
-        padding: 11px 0 0 55px;
-        margin: 151px 0 0 52px;
-      }
-    }
-    > a {
-      @include f_style(14, bold, 21, 0);
-    }
+  }
+  h3 {
+    font-size: 28px;
+    top: 0;
+    padding: 30px 0 0 117px;
+    position: absolute;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/1;
   }
 }

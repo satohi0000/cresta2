@@ -1,6 +1,13 @@
 @use "../global" as *;
 
 .p-nav {
+  &-wrapper {
+    display: flex;
+    position: absolute;
+    padding: 28px 6% 0 0;
+    top: 0;
+    right: 0;
+  }
   &-list {
     display: flex;
     @include tab {
@@ -14,8 +21,8 @@
       z-index: 20;
       opacity: 0;
     }
-    &-item {
-      margin-right: 55px;
+    &-item1 {
+      padding-right: 30px;
     }
   }
 }

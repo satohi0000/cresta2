@@ -1,22 +1,24 @@
 @use "../global" as *;
 
 .p-article {
-  max-width: $inner2;
+  width: 100%;
   margin: 0 auto;
   @include tab {
     margin-left: 14px;
   }
   &:nth-of-type(1) {
-    margin-top: 113px;
+    margin-top: 46px;
+    padding-left: 25px;
   }
   &:nth-of-type(2) {
-    margin-top: 175px;
+    margin-top: 115px;
     @include tab {
       margin-top: 164px;
     }
   }
   &:nth-of-type(3) {
-    margin-top: 156px;
+    margin-top: 43px;
+
     @include tab {
       margin-top: 133px;
     }
@@ -35,126 +37,139 @@
     text-align: center;
   }
   h3 {
-    margin-top: 76px;
-    @include tab {
-      font-size: 20px;
+    padding-top: 76px;
+    padding-left: 180px;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 200px;
+      height: 6px;
+      margin-left: 43px;
+      margin-bottom: 10px;
+      background-color: #282f35;
+      vertical-align: middle;
     }
   }
-  p {
-    margin-top: 26px;
-    @include tab {
-      margin-top: 20px;
-      letter-spacing: 0.06em;
-      padding-right: 11px;
-    }
+  h5 {
+    margin-top: 82px;
+    margin-right: 25px;
+    text-align: center;
   }
-  &__2colum {
-    &1 {
-      display: flex;
-      width: 100%;
-      @include tab {
-        flex-direction: column-reverse;
-      }
-
-      &-left {
-        width: 94%;
-        margin-top: 82px;
-
-        @include tab {
-          margin-top: 36px;
-          width: 100%;
-        }
-        img {
-          width: 100%;
-          @include tab {
-            width: 96%;
-          }
-          object-fit: cover;
-        }
-      }
-      &-right {
-        margin-top: 17px;
-        margin-left: 70px;
-        @include tab {
-          margin-top: 0px;
-          margin-left: 0px;
-        }
-      }
-    }
-    &2 {
-      display: flex;
-      width: 100%;
-      @include tab {
-        flex-direction: column;
-      }
-      &-left {
-        width: 100%;
-        margin-bottom: 5px;
-        margin-right: 70px;
-        @include tab {
-          margin-right: 0px;
-        }
-        h3 {
-          margin-top: 54px;
-          @include tab {
-            margin-top: 13px;
-          }
-        }
-      }
-      &-right {
-        margin-top: 47px;
-        width: 100%;
-        @include tab {
-          margin-top: 5px;
-        }
-        img {
-          width: 100%;
-          @include tab {
-            width: 96%;
-          }
-        }
-      }
-    }
+  section {
+    max-width: 1300px;
+    margin-top: 110px;
+    text-align: end;
   }
-  &__3card {
+  &__2colum1 {
     display: flex;
-    @include tab {
-      flex-direction: column;
+    width: 100%;
+    &-left {
+      margin-top: 104px;
+      padding-left: 189px;
+      width: 31%;
     }
-    &-1 {
-      margin-top: 75px;
-      margin-left: 33px;
+    &-right {
+      width: 41%;
+      margin-left: 125px;
+      margin-top: 66px;
+    }
+  }
+  &__3colum {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    &1 {
       width: 33%;
-      @include tab {
-        width: 89%;
-        margin-top: 79px;
-      }
-      border: 1px solid #707070;
-      &:nth-of-type(1) {
-        margin-left: 0px;
-        @include tab {
-          margin-left: 12px;
-          margin-top: 79px;
-        }
-      }
-      &:nth-of-type(2),
-      &:nth-of-type(3) {
-        @include tab {
-          margin-left: 12px;
-          margin-top: 50px;
-        }
-      }
+      position: relative;
       img {
-        width: 100%;
+        position: absolute;
+        object-fit: cover;
       }
-      p {
-        padding: 17px 31px 25px 34px;
-        @include tab {
-          padding-top: 14px;
+      h4 {
+        margin-top: 135px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+    > section {
+      margin-top: 200px;
+    }
+  }
+  &2 {
+    background-image: url(../画像/img/works-bgi@2x.jpg);
+  }
+
+  &2,
+  &3 {
+    width: 100%;
+    margin-top: 118px;
+
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+      padding-top: 125px;
+      padding-right: 18px;
+      text-align: end;
+      color: white;
+      z-index: 1;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 6px;
+        margin-right: 110px;
+        margin-left: 50px;
+        background-color: $white;
+        vertical-align: middle;
+      }
+    }
+    &__3card {
+      display: flex;
+      width: 70%;
+      padding-top: 105px;
+      padding-bottom: 84px;
+      margin: 0 auto;
+
+      &-set {
+        width: 32%;
+        margin-right: 20px;
+        &:nth-of-type(3) {
+          margin-right: 0;
         }
-        margin-top: 0;
-        @include f_style(13, medium, 25, 50);
+        background-color: white;
+        img {
+          width: 100%;
+        }
+        p {
+          width: 88%;
+          @include f_style(16, regular, 30, 60);
+          font-family: $font-family2;
+          padding: 7px 21px 26px;
+        }
       }
+    }
+  }
+  &3 {
+    background-image: url(../画像/img/contact-bgi@2x.jpg);
+    margin-top: 97px;
+
+    h3 {
+      padding-top: 128px;
+      padding-right: 8px;
+    }
+
+    h4 {
+      margin-top: 100px;
+      margin-bottom: 52px;
+      font-size: 17px;
+      text-align: center;
+    }
+    section {
+      padding-bottom: 145px;
+      margin-top: 90px;
+      margin-left: 115px;
     }
   }
 }
