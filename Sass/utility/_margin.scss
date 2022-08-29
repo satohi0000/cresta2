@@ -3,10 +3,21 @@
 .u-mg {
   &-1 {
     margin-left: 45px;
+    @include tab {
+      margin-left: 15px;
+    }
   }
   &-2 {
-    margin-top: 448px !important;
     margin-left: 20px;
+    margin-top: 410px;
+  }
+  &-3 {
+    @include tab {
+      margin-top: 80px;
+    }
+  }
+  &-4 {
+    margin-top: 110px;
   }
 }
 

@@ -4,11 +4,14 @@
   width: 100%;
   margin: 0 auto;
   @include tab {
-    margin-left: 14px;
   }
   &:nth-of-type(1) {
     margin-top: 46px;
     padding-left: 25px;
+    @include tab {
+      margin-top: 110px;
+      padding-left: 0;
+    }
   }
   &:nth-of-type(2) {
     margin-top: 115px;
@@ -20,7 +23,8 @@
     margin-top: 43px;
 
     @include tab {
-      margin-top: 133px;
+      margin-top: 75px;
+      margin-left: 0;
     }
   }
   &:nth-of-type(4) {
@@ -39,6 +43,11 @@
   h3 {
     padding-top: 76px;
     padding-left: 180px;
+    @include tab {
+      padding-top: 0px;
+      padding-left: 10px;
+      letter-spacing: 0.15em;
+    }
     &::after {
       content: "";
       display: inline-block;
@@ -46,50 +55,99 @@
       height: 6px;
       margin-left: 43px;
       margin-bottom: 10px;
+      @include tab {
+        width: 85px;
+      }
       background-color: #282f35;
       vertical-align: middle;
     }
   }
   h5 {
+    width: 43%;
+
+    @include tab {
+      margin-top: 55px;
+      width: 92%;
+    }
+    margin: 0 auto;
     margin-top: 82px;
-    margin-right: 25px;
     text-align: center;
   }
   section {
     max-width: 1300px;
-    margin-top: 110px;
     text-align: end;
+    @include tab {
+      margin-top: 36px;
+      padding-right: 20px;
+    }
   }
   &__2colum1 {
     display: flex;
+    @include tab {
+      flex-direction: column;
+    }
     width: 100%;
     &-left {
-      margin-top: 104px;
-      padding-left: 189px;
-      width: 31%;
+      margin-top: 7.5%;
+      padding-left: 13.5%;
+      width: 32%;
+      @include tab {
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 10px;
+        width: 90%;
+      }
     }
     &-right {
-      width: 41%;
-      margin-left: 125px;
-      margin-top: 66px;
+      width: 34%;
+      margin-left: 8%;
+      margin-top: 5%;
+      @include tab {
+        width: 92%;
+        margin-left: 15px;
+        margin-top: 32px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+      }
     }
   }
   &__3colum {
     display: flex;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 110px;
+    @include tab {
+      display: block;
+      margin-top: 87px;
+    }
     &1 {
       width: 33%;
       position: relative;
+      @include tab {
+        width: 100%;
+        margin-top: 25px;
+      }
       img {
         position: absolute;
         object-fit: cover;
+        width: 100%;
+        @include tab {
+          position: unset;
+        }
       }
       h4 {
-        margin-top: 135px;
+        margin-top: 28%;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0%);
+        z-index: 1;
+        @include tab {
+          margin-top: 110px;
+          font-size: 22px;
+        }
       }
     }
     > section {
@@ -97,20 +155,14 @@
     }
   }
   &2 {
-    background-image: url(../画像/img/works-bgi@2x.jpg);
-  }
-
-  &2,
-  &3 {
-    width: 100%;
-    margin-top: 118px;
-
-    background-size: cover;
-    background-position: center;
-
     h3 {
       padding-top: 125px;
-      padding-right: 18px;
+      padding-right: 128px;
+      letter-spacing: 0.2em;
+      @include tab {
+        padding-top: 110px;
+        padding-right: 10px;
+      }
       text-align: end;
       color: white;
       z-index: 1;
@@ -119,8 +171,13 @@
         display: inline-block;
         width: 200px;
         height: 6px;
-        margin-right: 110px;
-        margin-left: 50px;
+        margin-left: 43px;
+        margin-bottom: 10px;
+        @include tab {
+          margin-left: 30px;
+          width: 95px;
+          margin-right: 10px;
+        }
         background-color: $white;
         vertical-align: middle;
       }
@@ -131,45 +188,107 @@
       padding-top: 105px;
       padding-bottom: 84px;
       margin: 0 auto;
+      @include tab {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 31px;
+        padding-bottom: 0;
+      }
 
       &-set {
         width: 32%;
         margin-right: 20px;
+
+        @include tab {
+          width: 87%;
+          margin-right: 0;
+          margin-top: 30px;
+          margin-left: 7%;
+        }
         &:nth-of-type(3) {
           margin-right: 0;
         }
         background-color: white;
         img {
           width: 100%;
+          object-fit: cover;
         }
         p {
           width: 88%;
-          @include f_style(16, regular, 30, 60);
+          @include f_style1(16, regular, 30, 60);
           font-family: $font-family2;
           padding: 7px 21px 26px;
+          flex-grow: 1;
         }
       }
     }
+    background-image: url(../画像/img/works-bgi@2x.jpg);
+  }
+
+  &2 {
+    margin-top: 118px;
+    @include tab {
+      margin-top: 59px;
+    }
+
+    background-size: cover;
+    background-position: center;
   }
   &3 {
+    width: 100%;
     background-image: url(../画像/img/contact-bgi@2x.jpg);
-    margin-top: 97px;
+    margin-top: 125px;
+    @include tab {
+      margin-top: 100px;
+    }
 
     h3 {
-      padding-top: 128px;
-      padding-right: 8px;
+      padding-top: 134px;
+      padding-right: 128px;
+      @include tab {
+        padding-top: 110px;
+        padding-right: 10px;
+      }
+      text-align: end;
+      color: white;
+      z-index: 1;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 6px;
+        margin-left: 43px;
+        margin-bottom: 10px;
+        @include tab {
+          margin-left: 30px;
+          width: 95px;
+          margin-right: 10px;
+        }
+        background-color: $white;
+        vertical-align: middle;
+      }
     }
 
     h4 {
       margin-top: 100px;
       margin-bottom: 52px;
-      font-size: 17px;
+      @include tab {
+        margin-top: 90px;
+        margin-bottom: 30px;
+      }
+      font-size: 20px;
       text-align: center;
+      font-family: $font-family2;
     }
     section {
-      padding-bottom: 145px;
+      padding-bottom: 138px;
       margin-top: 90px;
       margin-left: 115px;
+      @include tab {
+        margin-top: 50px;
+        margin-left: 13px;
+        padding-bottom: 85px;
+      }
     }
   }
 }

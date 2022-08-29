@@ -8,38 +8,13 @@
   width: 109px;
   margin: 0 auto;
 }
-.c-ham-btn {
-  display: none;
-  @include tab {
-    display: flex;
-  }
-  position: relative;
-  width: 40px;
-  height: 50px;
-  z-index: 98;
-  cursor: pointer;
-  margin-top: 30px;
-  span {
-    position: absolute;
-    left: 7px;
-    width: 36px;
-    height: 3px;
-    transition: all 0.4s;
-    background-color: $white;
-    &:nth-of-type(2) {
-      top: 8px;
-    }
-    &:nth-of-type(3) {
-      top: 17px;
-    }
-  }
-}
 
 #c-BTN1 {
   &.active {
     transform: rotate(360deg);
     transition: all 0.9s;
     margin-top: 0px;
+    z-index: 99;
     span {
       &:nth-of-type(1) {
         top: 3px;
@@ -54,6 +29,34 @@
         transform: translateY(-15px) rotate(45deg);
         background-color: $white;
       }
+    }
+  }
+}
+
+.c-ham-btn {
+  display: none;
+  @include tab {
+    display: flex;
+  }
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  z-index: 98;
+  cursor: pointer;
+  top: 37px;
+  right: 15px;
+  span {
+    position: absolute;
+    left: 7px;
+    width: 36px;
+    height: 3px;
+    transition: all 0.4s;
+    background-color: $white;
+    &:nth-of-type(2) {
+      top: 8px;
+    }
+    &:nth-of-type(3) {
+      top: 17px;
     }
   }
 }

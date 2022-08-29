@@ -2,4 +2,7 @@
 
 .u-pd {
   padding: 115px 0 100px 118px;
+  @include tab {
+    padding: 100px 0 100px 20px;
+  }
 }

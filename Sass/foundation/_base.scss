@@ -1,5 +1,8 @@
 @use "../global" as *;
 
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: $background;
   list-style: none;
@@ -8,46 +11,65 @@ body {
   }
   li {
     color: $white;
-    @include f_style(16, bold, 22, 50);
+    @include f_style1(16, bold, 22, 50);
     font-style: italic;
     font-family: $font-family1;
   }
   h1 {
-    @include f_style(70, bold, 50, 69);
+    @include f_style1(70, bold, 50, 69);
     color: $white;
     font-family: $font-family1;
+    @include tab {
+      font-size: 38px;
+      white-space: nowrap;
+    }
   }
   h2 {
-    @include f_style(40, bold, 50, 50);
+    @include f_style1(40, bold, 50, 50);
     font-weight: $font-family2;
   }
   h3 {
-    @include f_style(60, Bold, 36, 110);
+    @include f_style1(60, Bold, 36, 110);
     font-style: italic;
     font-family: $font-family1;
     color: #282f35;
+    @include tab {
+      font-size: 28px;
+    }
   }
   h4 {
     color: $white;
-    @include f_style(40, Bold, 50, 50);
+    @include f_style1(40, Bold, 50, 50);
     font-family: $font-family2;
     font-style: italic;
+    @include tab {
+      font-size: 30px;
+    }
   }
   h5 {
     color: #171717;
-    @include f_style(30, Bold, 50, 60);
+    @include f_style1(30, Bold, 50, 60);
     font-family: $font-family2;
+    @include tab {
+      font-size: 20px;
+      line-height: 1.6;
+      letter-spacing: 0.07em;
+    }
   }
   section {
     color: #171717;
-    @include f_style(90, bold, 29, 10);
+    @include f_style1(90, bold, 29, 10);
     opacity: 0.5;
+    @include tab {
+      font-size: 40px;
+    }
   }
   p,
   dt,
   dd {
-    @include f_style(16, bold, 30, 20);
+    @include f_style1(16, bold, 30, 20);
     color: $black;
     font-weight: $font-family2;
+    letter-spacing: 0.05em;
   }
 }
