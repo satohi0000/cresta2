@@ -1,7 +1,7 @@
 @use "../global" as *;
 
 .p-fv {
-  height: 60vh;
+  height: 65vh;
   min-height: 550px;
   position: relative;
   img {
@@ -13,7 +13,7 @@
   &__center {
     position: absolute;
     left: 120px;
-    bottom: 180px;
+    bottom: 170px;
     color: #fff;
     h4 {
       margin-top: 50px;

@@ -334,7 +334,7 @@ select {
 .l-header__inner {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 84%;
   height: 50px;
   padding: 25px 8%;
   position: absolute;
@@ -823,7 +823,7 @@ select {
 }
 
 .p-fv {
-  height: 60vh;
+  height: 65vh;
   min-height: 550px;
   position: relative;
 }
@@ -836,7 +836,7 @@ select {
 .p-fv__center {
   position: absolute;
   left: 120px;
-  bottom: 180px;
+  bottom: 170px;
   color: #fff;
 }
 .p-fv__center h4 {

@@ -25,7 +25,7 @@ $(function () {
 
 $(".p-fv__slider").slick({
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 6000,
   speed: 1000,
   fade: true,
   cssEase: "linear",
