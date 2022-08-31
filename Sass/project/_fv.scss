@@ -1,0 +1,23 @@
+@use "../global" as *;
+
+.p-fv {
+  height: 60vh;
+  min-height: 550px;
+  position: relative;
+  img {
+    object-fit: cover;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+  &__center {
+    position: absolute;
+    left: 120px;
+    bottom: 180px;
+    color: #fff;
+    h4 {
+      margin-top: 50px;
+      margin-left: 5%;
+    }
+  }
+}

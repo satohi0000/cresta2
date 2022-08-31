@@ -4,7 +4,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    width: 83%;
+    width: 85%;
     height: 50px;
     padding: 25px 8%;
     @include tab {
@@ -59,8 +59,11 @@
   }
 }
 
-.fixed-class {
-  background-color: aqua;
-  top: 0;
+.is-fixed {
+  position: fixed;
+  background-color: #282f35;
+  height: 70px;
   width: 100%;
+  transition: 0.3s;
+  z-index: 99;
 }

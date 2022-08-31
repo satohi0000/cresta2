@@ -7,7 +7,7 @@
   }
   &:nth-of-type(1) {
     margin-top: 46px;
-    padding-left: 25px;
+
     @include tab {
       margin-top: 110px;
       padding-left: 0;
@@ -42,7 +42,7 @@
   }
   h3 {
     padding-top: 76px;
-    padding-left: 180px;
+    padding-left: 15%;
     @include tab {
       padding-top: 0px;
       padding-left: 10px;
@@ -217,7 +217,7 @@
           width: 88%;
           @include f_style1(16, regular, 30, 60);
           font-family: $font-family2;
-          padding: 7px 21px 26px;
+          padding: 31px 6%;
           flex-grow: 1;
         }
       }
