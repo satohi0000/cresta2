@@ -18,17 +18,10 @@
   }
   &-4 {
     margin-top: 110px;
+    margin-left: 30px;
   }
 }
 
-.u-mr36 {
-  @include tab {
-    margin-right: 18px;
-  }
-}
-
-.u-mr10 {
-  @include tab {
-    margin-right: 10px;
-  }
+.slick-next {
+  right: 0px !important;
 }

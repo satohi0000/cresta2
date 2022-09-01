@@ -6,18 +6,18 @@
   position: relative;
   img {
     object-fit: cover;
-    height: 100%;
-    min-height: 100%;
+    height: 753px;
     width: 100%;
   }
   &__center {
     position: absolute;
-    left: 120px;
-    bottom: 170px;
+    left: 8%;
+    bottom: 29%;
     color: #fff;
     h4 {
       margin-top: 50px;
       margin-left: 5%;
+      font-style: normal;
     }
   }
 }

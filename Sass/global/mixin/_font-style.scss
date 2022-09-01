@@ -15,7 +15,7 @@
 }
 
 @mixin f_style2($pixels, $weight: false, $height: false, $spacing: false) {
-  font-size: $pixels / 10 * 1rem;
+  font-size: $pixels * 10rem;
 
   @if $weight {
     font-weight: $weight;

@@ -6,9 +6,9 @@
     justify-content: space-between;
     width: 84%;
     height: 50px;
-    padding: 25px 8%;
+    padding: 50px 7% 25px 8%;
     @include tab {
-      padding: 40px 4%;
+      padding: 40px 3%;
     }
     position: absolute;
     z-index: 99;

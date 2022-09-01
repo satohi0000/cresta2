@@ -20,7 +20,7 @@
     }
   }
   &:nth-of-type(3) {
-    margin-top: 43px;
+    margin-top: 107px;
 
     @include tab {
       margin-top: 75px;
@@ -41,8 +41,8 @@
     text-align: center;
   }
   h3 {
-    padding-top: 76px;
-    padding-left: 15%;
+    padding-top: 12px;
+    padding-left: 12%;
     @include tab {
       padding-top: 0px;
       padding-left: 10px;
@@ -88,8 +88,8 @@
     }
     width: 100%;
     &-left {
-      margin-top: 7.5%;
-      padding-left: 13.5%;
+      margin-top: 7%;
+      padding-left: 15%;
       width: 32%;
       @include tab {
         margin-top: 20px;
@@ -99,9 +99,9 @@
       }
     }
     &-right {
-      width: 34%;
-      margin-left: 8%;
-      margin-top: 5%;
+      width: 32%;
+      margin-left: 7%;
+      margin-top: 4.5%;
       @include tab {
         width: 92%;
         margin-left: 15px;
@@ -156,8 +156,8 @@
   }
   &2 {
     h3 {
-      padding-top: 125px;
-      padding-right: 128px;
+      padding-top: 134px;
+      padding-right: 107px;
       letter-spacing: 0.2em;
       @include tab {
         padding-top: 110px;
@@ -217,7 +217,7 @@
           width: 88%;
           @include f_style1(16, regular, 30, 60);
           font-family: $font-family2;
-          padding: 31px 6%;
+          padding: 10px 6% 25px;
           flex-grow: 1;
         }
       }
