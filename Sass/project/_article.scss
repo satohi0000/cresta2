@@ -9,8 +9,8 @@
     margin-top: 46px;
 
     @include tab {
-      margin-top: 110px;
-      padding-left: 0;
+      margin-top: 161px;
+      padding-left: 5px;
     }
   }
   &:nth-of-type(2) {
@@ -41,8 +41,8 @@
     text-align: center;
   }
   h3 {
-    padding-top: 12px;
-    padding-left: 12%;
+    padding-top: 18px;
+    padding-left: 15%;
     @include tab {
       padding-top: 0px;
       padding-left: 10px;
@@ -67,6 +67,7 @@
 
     @include tab {
       margin-top: 55px;
+      margin-left: 9px;
       width: 92%;
     }
     margin: 0 auto;
@@ -88,37 +89,39 @@
     }
     width: 100%;
     &-left {
-      margin-top: 7%;
+      margin-top: 7.5%;
       padding-left: 15%;
-      width: 32%;
+      width: 31%;
+
       @include tab {
-        margin-top: 20px;
-        padding-left: 15px;
+        margin-top: 23px;
+        padding-left: 12px;
         padding-right: 10px;
         width: 90%;
       }
     }
     &-right {
-      width: 32%;
-      margin-left: 7%;
+      width: 31%;
+      margin-left: 8%;
       margin-top: 4.5%;
+
       @include tab {
-        width: 92%;
-        margin-left: 15px;
+        width: 91%;
+        height: 150px;
+        margin-left: 12px;
         margin-top: 32px;
       }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        aspect-ratio: 2/1;
       }
     }
   }
   &__3colum {
     display: flex;
     width: 100%;
-    margin-top: 110px;
+    margin-top: 103px;
     @include tab {
       display: block;
       margin-top: 87px;
@@ -156,11 +159,11 @@
   }
   &2 {
     h3 {
-      padding-top: 134px;
+      padding-top: 122px;
       padding-right: 107px;
       letter-spacing: 0.2em;
       @include tab {
-        padding-top: 110px;
+        padding-top: 115px;
         padding-right: 10px;
       }
       text-align: end;
@@ -185,8 +188,8 @@
     &__3card {
       display: flex;
       width: 70%;
-      padding-top: 105px;
-      padding-bottom: 84px;
+      padding-top: 109px;
+      padding-bottom: 76px;
       margin: 0 auto;
       @include tab {
         flex-direction: column;
@@ -200,17 +203,21 @@
         margin-right: 20px;
 
         @include tab {
-          width: 87%;
+          width: 84%;
           margin-right: 0;
           margin-top: 30px;
           margin-left: 7%;
         }
+        &:nth-of-type(2) {
+          margin-top: 38px;
+        }
         &:nth-of-type(3) {
-          margin-right: 0;
+          margin-top: 32px;
         }
         background-color: white;
         img {
           width: 100%;
+          height: 59%;
           object-fit: cover;
         }
         p {
@@ -226,9 +233,9 @@
   }
 
   &2 {
-    margin-top: 118px;
+    margin-top: 0px;
     @include tab {
-      margin-top: 59px;
+      margin-top: 84px;
     }
 
     background-size: cover;
@@ -239,7 +246,7 @@
     background-image: url(../画像/img/contact-bgi@2x.jpg);
     margin-top: 125px;
     @include tab {
-      margin-top: 100px;
+      margin-top: 90px;
     }
 
     h3 {
@@ -247,7 +254,8 @@
       padding-right: 128px;
       @include tab {
         padding-top: 110px;
-        padding-right: 10px;
+        padding-right: 7%;
+        letter-spacing: 0.2em;
       }
       text-align: end;
       color: white;
@@ -262,7 +270,7 @@
         @include tab {
           margin-left: 30px;
           width: 95px;
-          margin-right: 10px;
+          margin-right: 0px;
         }
         background-color: $white;
         vertical-align: middle;
@@ -274,7 +282,8 @@
       margin-bottom: 52px;
       @include tab {
         margin-top: 90px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        font-size: 18px;
       }
       font-size: 20px;
       text-align: center;
@@ -282,12 +291,12 @@
     }
     section {
       padding-bottom: 138px;
-      margin-top: 90px;
+      margin-top: 0px;
       margin-left: 115px;
       @include tab {
         margin-top: 50px;
         margin-left: 13px;
-        padding-bottom: 85px;
+        padding-bottom: 35px;
       }
     }
   }
