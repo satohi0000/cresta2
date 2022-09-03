@@ -2,6 +2,9 @@
 
 .p-top {
   height: 450px;
+  @include tab {
+    height: 360px;
+  }
   position: relative;
   img {
     position: absolute;
@@ -13,6 +16,9 @@
     position: absolute;
     z-index: 2;
     top: 50%;
+    @include tab {
+      top: 54%;
+    }
     left: 50%;
     transform: translate(-50%, -50%);
   }

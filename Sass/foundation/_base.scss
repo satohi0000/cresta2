@@ -73,6 +73,9 @@ body {
 
   label {
     @include f_style1(16, regular, 20, 50);
+    @include tab {
+      line-height: normal;
+    }
   }
 
   img {

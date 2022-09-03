@@ -201,6 +201,7 @@
       &-set {
         width: 32%;
         margin-right: 20px;
+        height: 100%;
 
         @include tab {
           width: 84%;
@@ -209,10 +210,14 @@
           margin-left: 7%;
         }
         &:nth-of-type(2) {
-          margin-top: 38px;
+          @include tab {
+            margin-top: 38px;
+          }
         }
         &:nth-of-type(3) {
-          margin-top: 32px;
+          @include tab {
+            margin-top: 32px;
+          }
         }
         background-color: white;
         img {
