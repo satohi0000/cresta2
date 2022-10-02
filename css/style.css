@@ -589,7 +589,7 @@ select {
 }
 @media (max-width: 768px) {
   .p-article__3colum1 h4 {
-    margin-top: 95px;
+    margin-top: 115px;
     font-size: 60px;
   }
 }
