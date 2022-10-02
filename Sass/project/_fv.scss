@@ -32,11 +32,11 @@
       font-style: normal;
       @include tab {
         margin-top: 56px;
-        margin-left: 13%;
-        margin-right: 23%;
+        margin-left: 0%;
+        margin-right: 0%;
         text-align: center;
         line-height: 1.6;
-        width: 75%;
+        width: 100%;
       }
     }
   }
